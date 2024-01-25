@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Hasta Güncelleme</h1>
+
+<form method="post">
+
+    <input type="hidden" name="hastaID" value ="{{alinan[0]}}"><br>
+
+    <label> Hasta Adı : </label>
+    <input type="text" name="hastaTitle" value ="{{alinan[1]}}"><br>
+
+    <label>Doktor Adı : </label>
+    <input type="text" name="hastaAuthor" value ="{{alinan[2]}}"><br>
+
+    <label>Hasta Yılı : </label>
+    <input type="text" name="hastaYear" value ="{{alinan[3]}}"><br>
+
+    <input type="submit">
+
+</form>
+
+{% endblock %} 

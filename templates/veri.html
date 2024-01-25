@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<dt><p><b>Hasta sayfası<br></b></dt>
+
+<hr>
+
+{% for hast in alinan %}
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <a href = "hastadetay/{{hast[0]}}"> <h5 class ="card-title">{{hast[1]}}</h5></a>
+      <p class="card-text">{{hast[2]}}</p>
+      <a href="hastasil/{{hast[0]}}" class="btn btn-primary">Sil</a>
+      <!-- <a href="doktorsil/{{hast[0]}}" class="btn btn-primary">Doktor Sil</a> -->
+      <a href="hastaguncelle/{{hast[0]}}" class="btn btn-primary">Hasta Güncelle</a>
+    </div>
+  </div>
+
+{% endfor %}
+
+<hr>
+
+{% endblock %} 
